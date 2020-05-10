@@ -1,6 +1,11 @@
+$(".menu-btn").on("click", function() {
+    $(".sidebar").toggle();
+})
 
-var a = 10;
-var b = 20;
-document.write(a*b)
-document.write('<br>')
-document.write(a-b)
+$(".event-popup").on("click", function () {
+    $(".popup").show();
+})
+
+$(".popup").on("click", function () {
+    $(".popup").hide();
+})
