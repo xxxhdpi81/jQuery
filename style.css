@@ -38,7 +38,7 @@ header {
     background-color: #262626;
 }
 
-ul {
+.sidebar ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,11 +46,11 @@ ul {
     padding: 100px;
 }
 
-li {
+.sidebar ul li {
     margin-bottom: 10px;
 }
 
-a {
+.sidebar ul li a {
     color: #fff;
     padding: 15px;
 }
@@ -80,10 +80,56 @@ a {
     background-color: black;
     width: 100px;
     height: 100px;
+    color: #fff;
 }
 
 .box03 {
     background-color: red;
     width: 100px;
     height: 100px;
+}
+
+.section-list ul li {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.section-list ul li a {
+    padding: 20px;
+}
+
+.btn-menu {
+    background-color: #333;
+    width: 100px;
+    height: 48px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.box04 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.box05 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
