@@ -2,6 +2,15 @@ $(".menu-btn").on("click", function() {
     $(".sidebar").toggle();
 })
 
+$(".menu-btn").on("mouseover", function () {
+    $(".menu-btn a").css('color','red')
+});
+
+$(".menu-btn").on("mouseout", function () {
+    $(".menu-btn a").css('color','#242424')
+
+});
+
 $(".event-popup").on("click", function () {
     $(".popup").show();
 })
@@ -41,3 +50,33 @@ $('h1').html('제이쿼리 연습').css({
    'background':'red'
 });
 
+$('h3').html('이소연').css({
+    color: 'blue',
+    fontsize: '72px'
+});
+
+$('.box').css({
+   background: '#ddd',
+   width: '300px',
+   height: '200px'
+});
+
+
+/*
+$('.box').on('mouseover', function () {
+    $(this).css('background-color','black');
+})
+
+$('.box').on('mouseout', function () {
+    $(this).css('background-color','#dddddd');
+})
+*/
+
+
+$('h1').on('click', function () {
+    $('.box').toggle();
+});
+
+$('.box02').on('click', function () {
+    $('.box03').animate({'opacity':0},3000);
+} );
