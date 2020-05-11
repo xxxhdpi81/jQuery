@@ -133,3 +133,15 @@ header {
     align-items: center;
 
 }
+
+.box06 {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+}
+
+.box07 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}

@@ -93,8 +93,11 @@ $('.section-list ul li').on('mouseout', function () {
     $(this).css({'background-color':"#fff"});
 } );
 
-$('.btn-menu').on('click', function () {
-    $('ul').show();
+$('.btn-menu').on('mouseover', function () {
+    $('.hide').show()
+});
+$('.btn-menu').on('mouseout', function () {
+    $('.hide').hide()
 });
 
 $('.box04').on('click', function() {
@@ -105,3 +108,22 @@ $('.box05').animate({'width':'700px'},
     function () {
         $(this).animate({'width':'100px'})
 } )
+
+$('.box06').on('click', function () {
+    $(this).animate({'margin-left':'800px'},1000);
+} );
+
+
+$('.box07').on('mouseover', function () {
+    $(this).stop(true).animate({'background-color':'red'});
+} )
+.on('mouseout', function () {
+    $(this).stop(true).animate({'background-color':'green'});
+} );
+
+
+/*
+$('.box07').animate({'width':'800px'},function () {
+    $(this).animate({'width':'100px'});
+});
+*/
