@@ -127,3 +127,83 @@ $('.box07').animate({'width':'800px'},function () {
     $(this).animate({'width':'100px'});
 });
 */
+
+$('.wrapper').on('mouseover', function () {
+    $(this).find('.dark-bg').stop(true).animate({'opacity': 1});
+})
+.on('mouseout', function () {
+    $(this).find('.dark-bg').stop(true).animate({'opacity': 0})
+});
+
+
+$('.wrapper-02').on('mouseover', function () {
+    $(this).find('.dark-bg-02').stop(true).animate({'left':0})
+})
+.on('mouseout', function () {
+    $(this).find('.dark-bg-02').stop(true).animate({'left':'-500px'});
+});
+
+
+var a = 20;
+var b = 30;
+if(a<b){
+    document.write('정답입니다!');
+} else{
+    document.write('거짓입니다!');
+}
+
+
+function popup() {
+    alert('안녕?')
+}
+popup();
+
+
+/*
+function plus(x,y) {
+    var sum = x + y;
+    return sum;
+}
+
+var c = 100;
+var d = 200;
+var total = plus(c,d);
+document.write(total);
+*/
+
+function event(name) {
+    return name + '님 안녕하세요?';
+}
+event('이소연');
+
+
+function add(x,y) {
+    var sum = x + y;
+    return sum
+}
+var ten = 10;
+var twenty = 20;
+var total = add(ten, twenty);
+document.write(total);
+
+var baby = {
+    age: '3살',
+    birth: '9월 22일',
+    name: function () {
+        return this.birth;
+    }
+}
+var bday = baby.birth;
+document.write(bday);
+
+
+/*
+$('.tumble').on('click', function () {
+    $('.box20').slideToggle();
+})
+*/
+
+$('.tumble').on('click', function () {
+    $('.box20').toggleClass('blue');
+});
+
